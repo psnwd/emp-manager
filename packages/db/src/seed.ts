@@ -1,5 +1,5 @@
 import { employees } from "./data/employee";
-import { Gender, PrismaClient } from "./index";
+import { PrismaClient } from "./index";
 
 export const prisma = new PrismaClient();
 
@@ -25,7 +25,7 @@ async function main() {
         lastName: employee.last_name,
         email: employee.email,
         number: employee.number,
-        gender: employee.gender as Gender,
+        gender: employee.gender as "M" | "F",
         photo: employee.photo,
       },
     });
