@@ -21,8 +21,8 @@
     "format": "prettier --check . --ignore-path ../../.gitignore",
     "lint": "eslint",
     "push": "pnpm with-env prisma push",
-    "seed": "dotenv -e ../../.env -- pnpm exec tsx src/seed.ts",
-    "studio": "pnpm with-env prisma studio",
+    "db:seed": "dotenv -e ../../.env -- pnpm exec tsx src/seed.ts",
+    "db:studio": "pnpm with-env prisma studio",
     "typecheck": "tsc --noEmit --emitDeclarationOnly false",
     "with-env": "dotenv -e ../../.env --"
   },
