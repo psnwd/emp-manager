@@ -20,6 +20,10 @@
       "cache": false,
       "persistent": false
     },
+    "start": {
+      "cache": false,
+      "persistent": false
+    },
     "format": {
       "outputs": [
         ".cache/.prettiercache"
