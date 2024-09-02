@@ -15,7 +15,7 @@
     "./*": "./*"
   },
   "scripts": {
-    "build": "tsc",
+    "build": "tsc && pnpm prisma generate",
     "clean": "git clean -xdf .cache .turbo dist node_modules",
     "dev": "tsup src/index.ts && pnpm prisma generate",
     "format": "prettier --check . --ignore-path ../../.gitignore",
